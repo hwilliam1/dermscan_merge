@@ -155,7 +155,7 @@
 		03580E3E23CFA2E400A57818 /* OCKSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OCKSample.entitlements; sourceTree = "<group>"; };
 		03F060092331946600CCE09B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0520468223C3C1F2004F0F36 /* OCKSample.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = OCKSample.xctestplan; sourceTree = "<group>"; };
-		5173CB8723C3A846007655A0 /* OCKSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCKSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5173CB8723C3A846007655A0 /* DermscanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DermscanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5173CB8923C3A846007655A0 /* OCKSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSampleUITests.swift; sourceTree = "<group>"; };
 		5173CB8B23C3A846007655A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51F6343923D2877B00FE576E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -212,7 +212,7 @@
 		91AD924524A4C42E00925D4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		91AD924724A4C42E00925D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91AD924824A4C42E00925D4D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		E72B2C06226939E3009A9438 /* OCKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E72B2C06226939E3009A9438 /* Dermscan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dermscan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72B2C09226939E3009A9438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E72B2C13226939E4009A9438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72B2C15226939E4009A9438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -482,8 +482,8 @@
 		E72B2C07226939E3009A9438 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E72B2C06226939E3009A9438 /* OCKSample.app */,
-				5173CB8723C3A846007655A0 /* OCKSampleUITests.xctest */,
+				E72B2C06226939E3009A9438 /* Dermscan.app */,
+				5173CB8723C3A846007655A0 /* DermscanUITests.xctest */,
 				91AD922724A4C42B00925D4D /* OCKWatchSample.app */,
 				91AD923324A4C42D00925D4D /* OCKWatchSample Extension.appex */,
 			);
@@ -512,9 +512,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5173CB8623C3A846007655A0 /* OCKSampleUITests */ = {
+		5173CB8623C3A846007655A0 /* DermscanUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5173CB9723C3A846007655A0 /* Build configuration list for PBXNativeTarget "OCKSampleUITests" */;
+			buildConfigurationList = 5173CB9723C3A846007655A0 /* Build configuration list for PBXNativeTarget "DermscanUITests" */;
 			buildPhases = (
 				5173CB8323C3A846007655A0 /* Sources */,
 				5173CB8523C3A846007655A0 /* Resources */,
@@ -525,9 +525,9 @@
 			dependencies = (
 				5173CB8D23C3A846007655A0 /* PBXTargetDependency */,
 			);
-			name = OCKSampleUITests;
+			name = DermscanUITests;
 			productName = OCKSampleUITests;
-			productReference = 5173CB8723C3A846007655A0 /* OCKSampleUITests.xctest */;
+			productReference = 5173CB8723C3A846007655A0 /* DermscanUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		91AD922624A4C42B00925D4D /* OCKWatchSample */ = {
@@ -569,9 +569,9 @@
 			productReference = 91AD923324A4C42D00925D4D /* OCKWatchSample Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		E72B2C05226939E3009A9438 /* OCKSample */ = {
+		E72B2C05226939E3009A9438 /* Dermscan */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E72B2C18226939E4009A9438 /* Build configuration list for PBXNativeTarget "OCKSample" */;
+			buildConfigurationList = E72B2C18226939E4009A9438 /* Build configuration list for PBXNativeTarget "Dermscan" */;
 			buildPhases = (
 				E72B2C02226939E3009A9438 /* Sources */,
 				E72B2C04226939E3009A9438 /* Resources */,
@@ -585,7 +585,7 @@
 			dependencies = (
 				91AD924A24A4C42E00925D4D /* PBXTargetDependency */,
 			);
-			name = OCKSample;
+			name = Dermscan;
 			packageProductDependencies = (
 				918FDEAE271B3F8F0045A0EF /* ParseCareKit */,
 				70F03A832784C67C00E5AFB4 /* CareKit */,
@@ -593,7 +593,7 @@
 				70F03A872784C67C00E5AFB4 /* CareKitUI */,
 			);
 			productName = CareKitDemoApp;
-			productReference = E72B2C06226939E3009A9438 /* OCKSample.app */;
+			productReference = E72B2C06226939E3009A9438 /* Dermscan.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -622,7 +622,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E72B2C01226939E3009A9438 /* Build configuration list for PBXProject "OCKSample" */;
+			buildConfigurationList = E72B2C01226939E3009A9438 /* Build configuration list for PBXProject "Dermscan" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -639,8 +639,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E72B2C05226939E3009A9438 /* OCKSample */,
-				5173CB8623C3A846007655A0 /* OCKSampleUITests */,
+				E72B2C05226939E3009A9438 /* Dermscan */,
+				5173CB8623C3A846007655A0 /* DermscanUITests */,
 				91AD922624A4C42B00925D4D /* OCKWatchSample */,
 				91AD923224A4C42D00925D4D /* OCKWatchSample Extension */,
 			);
@@ -800,7 +800,7 @@
 /* Begin PBXTargetDependency section */
 		5173CB8D23C3A846007655A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E72B2C05226939E3009A9438 /* OCKSample */;
+			target = E72B2C05226939E3009A9438 /* Dermscan */;
 			targetProxy = 5173CB8C23C3A846007655A0 /* PBXContainerItemProxy */;
 		};
 		91AD923624A4C42D00925D4D /* PBXTargetDependency */ = {
@@ -1237,7 +1237,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5173CB9723C3A846007655A0 /* Build configuration list for PBXNativeTarget "OCKSampleUITests" */ = {
+		5173CB9723C3A846007655A0 /* Build configuration list for PBXNativeTarget "DermscanUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5173CB8E23C3A846007655A0 /* Debug */,
@@ -1264,7 +1264,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E72B2C01226939E3009A9438 /* Build configuration list for PBXProject "OCKSample" */ = {
+		E72B2C01226939E3009A9438 /* Build configuration list for PBXProject "Dermscan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E72B2C16226939E4009A9438 /* Debug */,
@@ -1273,7 +1273,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		E72B2C18226939E4009A9438 /* Build configuration list for PBXNativeTarget "OCKSample" */ = {
+		E72B2C18226939E4009A9438 /* Build configuration list for PBXNativeTarget "Dermscan" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E72B2C19226939E4009A9438 /* Debug */,

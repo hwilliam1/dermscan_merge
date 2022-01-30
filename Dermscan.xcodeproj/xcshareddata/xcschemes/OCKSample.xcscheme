@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E72B2C05226939E3009A9438"
-               BuildableName = "OCKSample.app"
-               BlueprintName = "OCKSample"
-               ReferencedContainer = "container:OCKSample.xcodeproj">
+               BuildableName = "Dermscan.app"
+               BlueprintName = "Dermscan"
+               ReferencedContainer = "container:Dermscan.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -39,9 +39,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5173CB8623C3A846007655A0"
-               BuildableName = "OCKSampleUITests.xctest"
-               BlueprintName = "OCKSampleUITests"
-               ReferencedContainer = "container:OCKSample.xcodeproj">
+               BuildableName = "DermscanUITests.xctest"
+               BlueprintName = "DermscanUITests"
+               ReferencedContainer = "container:Dermscan.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E72B2C05226939E3009A9438"
-            BuildableName = "OCKSample.app"
-            BlueprintName = "OCKSample"
-            ReferencedContainer = "container:OCKSample.xcodeproj">
+            BuildableName = "Dermscan.app"
+            BlueprintName = "Dermscan"
+            ReferencedContainer = "container:Dermscan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -79,9 +79,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E72B2C05226939E3009A9438"
-            BuildableName = "OCKSample.app"
-            BlueprintName = "OCKSample"
-            ReferencedContainer = "container:OCKSample.xcodeproj">
+            BuildableName = "Dermscan.app"
+            BlueprintName = "Dermscan"
+            ReferencedContainer = "container:Dermscan.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

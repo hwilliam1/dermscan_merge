@@ -88,9 +88,9 @@ extension OCKStore {
                                interval: DateComponents(day: 2))
         ])
 
-        var doxylamine = OCKTask(id: TaskID.doxylamine, title: "Take Doxylamine",
+        var doxylamine = OCKTask(id: TaskID.doxylamine, title: "Reminder to scan your skin",
                                  carePlanUUID: nil, schedule: schedule)
-        doxylamine.instructions = "Take 25mg of doxylamine when you experience nausea."
+        doxylamine.instructions = "Take a daily picture to monitor your skin"
         doxylamine.asset = "pills.fill"
 
         let nauseaSchedule = OCKSchedule(composing: [
@@ -112,7 +112,7 @@ extension OCKStore {
 
         let stretchElement = OCKScheduleElement(start: beforeBreakfast, end: nil, interval: DateComponents(day: 1))
         let stretchSchedule = OCKSchedule(composing: [stretchElement])
-        var stretch = OCKTask(id: "stretch", title: "Stretch", carePlanUUID: nil, schedule: stretchSchedule)
+        var stretch = OCKTask(id: "strech", title: "scan", carePlanUUID: nil, schedule: stretchSchedule)
         stretch.impactsAdherence = true
         stretch.asset = "figure.walk"
 

@@ -14,6 +14,18 @@ import CareKitUI
 import UIKit
 
 // This file is the SwiftUI equivalent to UITabBarController in setupTabBarController() in SceneDelegate.swift
+struct RoundedRectangleButtonStyle: ButtonStyle {
+  func makeBody(configuration: Configuration) -> some View {
+    HStack {
+      Spacer()
+      configuration.label.foregroundColor(.white)
+      Spacer()
+    }
+    .padding()
+    .background(Color.purple.cornerRadius(8))
+    .scaleEffect(configuration.isPressed ? 0.95 : 1)
+  }
+}
 
 struct MainView: View {
 
@@ -24,66 +36,45 @@ struct MainView: View {
     @Environment(\.userProfileViewModel) private var profileViewModel
     @StateObject var userStatus = UserStatus()
     @State private var selectedTab = 0
-
+    @State private var isShowingProfile = false
+    @State private var isShowingCamera = false
+    
     var body: some View {
-
         NavigationView {
             VStack {
                 NavigationLink(destination: LoginView(),
                                isActive: $userStatus.isLoggedOut) {
-                   EmptyView()
+                    EmptyView()
                 }
-                TabView(selection: $selectedTab) {
-
-                    CareView()
-                        .tabItem {
-                            if selectedTab == 0 {
-                                Image("carecard-filled")
-                                    .renderingMode(.template)
-                            } else {
-                                Image("carecard")
-                                    .renderingMode(.template)
-                            }
-                        }
-                        .tag(0)
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
-
-                    ContactView()
-                        .tabItem {
-                            if selectedTab == 1 {
-                                Image("phone.bubble.left.fill")
-                                    .renderingMode(.template)
-                            } else {
-                                Image("phone.bubble.left")
-                                    .renderingMode(.template)
-                            }
-                        }
-                        .tag(1)
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
-
-                    ProfileView()
-                        .tabItem {
-                            if selectedTab == 2 {
-                                Image("connect-filled")
-                                    .renderingMode(.template)
-                            } else {
-                                Image("connect")
-                                    .renderingMode(.template)
-                            }
-                        }
-                        .tag(2)
-                        .navigationBarTitle("")
-                        .navigationBarHidden(true)
+             
+                NavigationLink(destination: ProfileView(),
+                               isActive: $isShowingProfile) {
+                    EmptyView()
                 }
+                NavigationLink(destination: Text("Here is the camera view"),
+                               isActive: $isShowingCamera) {
+                    EmptyView()
+                }
+                CareView()
+                Button("Create New Scan") {
+                    self.isShowingCamera = true
+                }
+                .buttonStyle(RoundedRectangleButtonStyle())
+                .background(Color.purple.cornerRadius(8))
+                .navigationBarTitle("DermScan")
+                .navigationBarItems(
+                    trailing:
+                        Button("Profile") {
+                            self.isShowingProfile = true
+                        }
+                )
             }
         }
         .environmentObject(userStatus)
         .statusBar(hidden: true)
         .accentColor(Color(tintColor))
         .careKitStyle(Styler())
-    }
+        }
 }
 
 struct MainView_Previews: PreviewProvider {
