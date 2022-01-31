@@ -57,6 +57,10 @@
 		70F03AB82788C82C00E5AFB4 /* ProfileViewModelKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F03AB72788C82C00E5AFB4 /* ProfileViewModelKey.swift */; };
 		70F03AB92788D02A00E5AFB4 /* UserStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F03AB52788C80500E5AFB4 /* UserStatus.swift */; };
 		70F03ABB2789071400E5AFB4 /* CareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F03ABA2789071400E5AFB4 /* CareViewModel.swift */; };
+		8937063227A88B4E00AB92A5 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8937063127A88B4E00AB92A5 /* ScanView.swift */; };
+		8937063427A88F1200AB92A5 /* CaptureImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8937063327A88F1200AB92A5 /* CaptureImageView.swift */; };
+		8937063627A88F3C00AB92A5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8937063527A88F3C00AB92A5 /* Coordinator.swift */; };
+		8937063827A88FDA00AB92A5 /* TakePhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8937063727A88FDA00AB92A5 /* TakePhotoView.swift */; };
 		91693818271B5E1600A634ED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7036E63F25717F85006E9A3C /* Constants.swift */; };
 		9169381B271B64E100A634ED /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169381A271B64E100A634ED /* Styler.swift */; };
 		9169381D271B650700A634ED /* ColorStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9169381C271B650700A634ED /* ColorStyler.swift */; };
@@ -186,6 +190,10 @@
 		70F03AB52788C80500E5AFB4 /* UserStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserStatus.swift; path = OCKSample/ViewModels/UserStatus.swift; sourceTree = SOURCE_ROOT; };
 		70F03AB72788C82C00E5AFB4 /* ProfileViewModelKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelKey.swift; sourceTree = "<group>"; };
 		70F03ABA2789071400E5AFB4 /* CareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareViewModel.swift; sourceTree = "<group>"; };
+		8937063127A88B4E00AB92A5 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		8937063327A88F1200AB92A5 /* CaptureImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureImageView.swift; sourceTree = "<group>"; };
+		8937063527A88F3C00AB92A5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8937063727A88FDA00AB92A5 /* TakePhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhotoView.swift; sourceTree = "<group>"; };
 		9169381A271B64E100A634ED /* Styler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
 		9169381C271B650700A634ED /* ColorStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStyler.swift; sourceTree = "<group>"; };
 		9169381F271B80EA00A634ED /* CONTRIBUTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
@@ -283,6 +291,7 @@
 				91693819271B64CB00A634ED /* Style */,
 				70308878258272CD00FFABB6 /* Care */,
 				7036E4D2256EBE35006E9A3C /* MainView.swift */,
+				8937063027A88B2200AB92A5 /* Camera */,
 				7030887D258272F400FFABB6 /* Contact */,
 				7030887C258272E700FFABB6 /* Profile */,
 			);
@@ -371,6 +380,17 @@
 				E72B2C15226939E4009A9438 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8937063027A88B2200AB92A5 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				8937063127A88B4E00AB92A5 /* ScanView.swift */,
+				8937063327A88F1200AB92A5 /* CaptureImageView.swift */,
+				8937063527A88F3C00AB92A5 /* Coordinator.swift */,
+				8937063727A88FDA00AB92A5 /* TakePhotoView.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		91693819271B64CB00A634ED /* Style */ = {
@@ -772,12 +792,15 @@
 				9169381D271B650700A634ED /* ColorStyler.swift in Sources */,
 				E72B2C0A226939E3009A9438 /* AppDelegate.swift in Sources */,
 				7036E4C4256E0A48006E9A3C /* CareView.swift in Sources */,
+				8937063227A88B4E00AB92A5 /* ScanView.swift in Sources */,
+				8937063627A88F3C00AB92A5 /* Coordinator.swift in Sources */,
 				70F03A932786087800E5AFB4 /* OCKAnyEvent+CustomStringConvertable.swift in Sources */,
 				918FDEC3271B4E950045A0EF /* TintColorKey.swift in Sources */,
 				70F03AA327860AFF00E5AFB4 /* OCKPatient+Parse.swift in Sources */,
 				918FDEB7271B41FF0045A0EF /* Logger.swift in Sources */,
 				70F03A9F27860A8800E5AFB4 /* OCKOutcomeValue+Identifiable.swift in Sources */,
 				7036E4D3256EBE35006E9A3C /* MainView.swift in Sources */,
+				8937063827A88FDA00AB92A5 /* TakePhotoView.swift in Sources */,
 				918FDEC5271B4EA70045A0EF /* StoreManagerKey.swift in Sources */,
 				91693822271B897200A634ED /* Utility.swift in Sources */,
 				707CC718254DA91900116728 /* OCKLocalization.swift in Sources */,
@@ -792,6 +815,7 @@
 				70F03A952786093B00E5AFB4 /* OCKHealthKitPassthroughStore+Default.swift in Sources */,
 				7036E4BF256DA089006E9A3C /* LoginViewModel.swift in Sources */,
 				7036E517256F2413006E9A3C /* ProfileViewModel.swift in Sources */,
+				8937063427A88F1200AB92A5 /* CaptureImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

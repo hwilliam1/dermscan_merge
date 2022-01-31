@@ -51,10 +51,16 @@ struct MainView: View {
                                isActive: $isShowingProfile) {
                     EmptyView()
                 }
-                NavigationLink(destination: Text("Here is the camera view"),
+//                NavigationLink(destination: Text("Here is the camera view"),
+//                               isActive: $isShowingCamera) {
+//                    EmptyView()
+//                }
+//Camera
+                NavigationLink(destination: ScanView(),
                                isActive: $isShowingCamera) {
                     EmptyView()
                 }
+//Carekit 
                 CareView()
                 Button("Create New Scan") {
                     self.isShowingCamera = true
