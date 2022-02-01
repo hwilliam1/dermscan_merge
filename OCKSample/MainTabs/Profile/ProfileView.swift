@@ -41,8 +41,21 @@ struct ProfileView: View {
                     .padding()
                     .cornerRadius(20.0)
                     .shadow(radius: 10.0, x: 20, y: 10)
-               Text("Picture place holder")
-                    .padding()
+                HStack {
+                    Image(systemName: "photo.fill")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                    Spacer()
+                    Image(systemName: "photo.fill")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                    Spacer()
+                    Image(systemName: "photo.fill")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                }
+                .padding()
+                
                 VStack (alignment: .leading, spacing: 10) {
                     HStack {
                         Image(systemName: "ruler.fill")
@@ -68,17 +81,12 @@ struct ProfileView: View {
                 .buttonStyle(RoundedRectangleButtonStyle())
                 .background(Color.purple.cornerRadius(8))
                 
-                VStack {
+                VStack(alignment: .leading, spacing: 10) {
                 Text("Next Scan Due On")
                 Text("3:30PM Feb 4, 2022")
                 }
                 .padding()
                 
-                VStack {
-                    Text("Scanning History")
-                    Text("Picture place holder")
-                }
-                .padding()
             }
 
 //                DatePicker("Birthday", selection: $birthday, displayedComponents: [DatePickerComponents.date])
